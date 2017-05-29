@@ -6,7 +6,6 @@ html, body {
   text-align: left;
   color: white;
   background-color: black;
-  width: 100%;
 }
 
 
@@ -16,9 +15,9 @@ html, body {
 header {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: auto;
   height: 75px;
-  padding: 0% 20%;
+  padding: 0% 10%;
 
 }
 
@@ -41,9 +40,9 @@ header .logo-text  {
 
 .main-banner {
   display: flex;
-  width: 100%;
+  width: auto;
   height: 400px;
-  padding: 0 20%;
+  padding: 0 10%;
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,9 +81,9 @@ header .logo-text  {
 nav ul {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: auto;
   max-height: 40px;
-  padding: 20px 20% 20px 20%;
+  padding: 20px 10% 20px 10%;
   background-color: darkred;
 
 }
@@ -104,9 +103,9 @@ nav li {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: auto;
   height: 390px;
-  padding: 40px 20%;
+  padding: 40px 10%;
   background-color: white;
 }
 
