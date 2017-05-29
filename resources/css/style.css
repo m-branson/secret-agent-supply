@@ -44,7 +44,7 @@ header .logo-text  {
   width: 100%;
   height: 400px;
   padding: 0 20%;
-  background-image: url(/Users/Megan/Projects/builds/SecretAgentSupply/resources/images/moto.jpeg);
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
