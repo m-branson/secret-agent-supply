@@ -1,142 +1,147 @@
 /* Universal Styles */
 
-html, body {
+html {
   font-family: Helvetica, sans-serif;
-  font-size: 14px;
-  text-align: left;
-  color: white;
-  background-color: black;
+  font-size: 18px;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+  margin: 0 auto;
+}
 
-/* Header */
-
+/* Logo Header */
 
 header {
-  display: flex;
-  align-items: center;
-  width: auto;
-  height: 75px;
-  padding: 0% 10%;
-
-}
-
-header .logo-icon {
-  display: inline-flex;
-  width: 25px;
-  height: 25px;
-  padding: 25px 25px 25px 0px;
-
-}
-
-header .logo-text  {
-  display: inline-flex;
-  text-transform: uppercase;
-}
-
-
-/* Main Banner */
-
-
-.main-banner {
-  display: flex;
-  width: auto;
-  height: 400px;
-  padding: 0 10%;
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
-}
-
-.main-banner .content {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 40%;
-  height: auto;
-  padding: 10% 5% 10% 5%;
   background-color: black;
-
 }
 
-.main-banner .content h2 {
-  display: inline-flex;
-  width: 100%;
-  padding-bottom: 20px;
+header .container {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header img  {
+  height: 1.5rem;
+  width: auto;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+header span {
+  padding: 0.66rem 0;
+  color: white;
+  font-size: 1rem;
   text-transform: uppercase;
 }
 
-.main-banner .content h1 {
-  display: inline-flex;
+
+/* Banner */
+
+.banner {
+  height: 25rem;
   width: 100%;
+  background-image: url("../images/moto.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  width: 20rem;
+  margin: 9rem 0rem;
+  padding: 2rem 3rem;
+  background-color: black;
+  color: white;
+  font-weight: bold;
   text-transform: uppercase;
-  font-size: 32px;
-  line-height: 40px;
+}
+
+h3 {
+  margin: 0.25rem 0;
+  font-size: 2rem;
 }
 
 
 /* Navigation */
 
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  width: auto;
-  max-height: 40px;
-  padding: 20px 10% 20px 10%;
-  background-color: darkred;
-
+nav {
+  background-color: firebrick;
 }
 
+
 nav li {
-  display: inline-flex;
-  align-content: space-between;
-  height: auto;
+  display: inline-block;
+  padding: 0.75rem 0;
+  color: white;
+}
+
+.menu-button {
+  display: none;
+
+  /* Use in small screens via media query */
+  padding: 0.75rem 0;
+  text-align: center;
 }
 
 
 /* Product Grid */
 
+.product {
+  margin-top: 3rem;
+}
 
-.product-grid {
+figure {
+  width: 30%;
+  border: 4px solid black;
+}
+
+.image-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: auto;
-  height: 390px;
-  padding: 40px 10%;
-  background-color: white;
-}
-
-.grid-item {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 300px;
-  max-height: 350px;
-  border: 5px solid black;
-  text-align: center;
-}
-
-.grid-item .image-wrapper {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 300px;
-  height: 300px;
-}
-
-.grid-item img {
-  display: inline-flex;
-  padding: 20% 20%;
-}
-
-.grid-item h2 {
-  display: inline-flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  height: 200px;
   width: 100%;
-  height: 50px;
+}
+
+img {
+  max-height: 9rem;
+  max-width: 50%;
+}
+
+figcaption {
+  display: block;
+  padding: 0.5rem 0;
   background-color: black;
+  text-align: center;
+  color: white;
+}
+
+/* Location & Hours */
+
+
+.info-detail {
+  width: 35%;
+  margin: 3rem 0 4rem 0;
+}
+
+.info-detail h5 {
+  padding: 1rem 2rem;
+  background-color: black;
+  color: white;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+}
+
+footer p {
+  width: 100%;
+  padding: 5rem 0;
+  color: white;
+  text-align: left;
 }
