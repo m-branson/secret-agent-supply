@@ -236,15 +236,19 @@ header .container {
 
 /* Info detail stacked */
 
-.info-detail {
-  width: 80%;
-  margin: 1rem 10% 1rem 10%;
-}
+  .info {
+    display: block;
+    align-items: center;
+    width: 100%;
+  }
 
-.info-detail h5 {
-  padding: 1rem 2rem;
-  background-color: black;
-  color: white;
-}
+  .info-detail h5 {
+    padding: .5rem 10%;
+    background-color: black;
+    color: white;
 
+  footer p {
+    font-size: .75rem;
+    text-align: center;
+  }
 }
