@@ -222,30 +222,18 @@ header .container {
     font-size: 1rem;
   }
 
-  /* Products reduced to single view */
+  /* Products & Info Stacked */
 
-  figure {
+  figure,
+  .info {
     display: block;
     width: 80%;
-    margin: 0.1rem 10%;
+    margin: 0.5rem 10%;
   }
 
   #watch {
     display: none;
   }
-
-/* Info detail stacked */
-
-  .info {
-    display: block;
-    align-items: center;
-    width: 100%;
-  }
-
-  .info-detail h5 {
-    padding: .5rem 10%;
-    background-color: black;
-    color: white;
 
   footer p {
     font-size: .75rem;
